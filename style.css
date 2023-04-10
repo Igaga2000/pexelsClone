@@ -170,7 +170,6 @@ Nav ul li a {
     width: 100%;
     font-size: 1.3rem;
     font-weight: 550;
-    padding: 0.5rem;
     border: none;
     outline: none;
 }
@@ -192,14 +191,21 @@ Nav ul li a {
 }
 .trending_links ul {
     display: flex;
+    margin-bottom: 2rem;
+}
+@media screen and (min-width: 600px) {
+    .trending_links ul {
+        margin-bottom: 0;
+    }
 }
 .trending_links ul li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 0.2rem;
 }
 .trending_links ul p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-right: 0.3em;
+    color: rgb(220, 220, 220);
 }
 .trending_links ul li a {
     color: #fff;
@@ -232,28 +238,32 @@ Nav ul li a {
 }
 .second_nav ul li.active {
     background-color: #000;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 20rem;
 }
 .second_nav ul li.active a {
     color: #fff;
 }
 .second_nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
     color: #000;
 }
 .third_nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 2.5rem;
+    padding: 2rem 1rem;
     align-items: center;
 }
 .third_nav h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 .third_nav select {
-    font-size: 1.1rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    outline: none;
     border-radius: 10px;
     border: 1px solid rgb(215, 215, 215);
 }
